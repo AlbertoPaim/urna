@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="etapas.js" defer></script>
+    <script src="script.js" defer></script>
+    <title>Urna Eletrônica</title>
+  </head>
+  <body>
+    <div class="urna">
+      <div class="screan">
+        <div class="d-1">
+            <div class="dleft">
+                <div class="frase">
+                    <span>SEU VOTO PARA</span>
+                </div>
+                <div class="cargo">
+                    <span>DEPUTADO</span>
+                </div>
+                <div class="input">
+
+                <div class="num pisca"></div>
+                <div class="num"></div>
+                </div>
+                <div class="candidate"></div>
+
+            </div>
+            <div class="dright">
+               <div class="dright-img">
+                <img src="images/84.jpg" alt="candidato principal">
+                Presidente
+               </div> 
+               <div class="dright-img small">
+                <img src="images/84_2.jpg" alt="vice candidato">
+                Vice
+
+               </div> 
+            </div>
+        </div>
+        <div class="d-2">
+            Aperte a tecla: <br>
+            CONFIRMA para CONFIRMAR este voto <br>
+            CORRIGE para REINICIAR este voto <br>
+        </div>
+
+      </div>
+      <div class="keyboard">
+
+        <div class="keyLine">
+            <div class="key" onclick="clicou('1')">1</div>
+            <div class="key" onclick="clicou('2')">2</div>
+            <div class="key" onclick="clicou('3')">3</div>
+        </div>
+
+        <div class="keyLine">
+            <div class="key" onclick="clicou('4')">4</div>
+            <div class="key" onclick="clicou('5')">5</div>
+            <div class="key" onclick="clicou('6')">6</div>
+        </div>
+
+        <div class="keyLine">
+            <div class="key" onclick="clicou('7')">7</div>
+            <div class="key" onclick="clicou('8')">8</div>
+            <div class="key" onclick="clicou('9')">9</div>
+        </div>
+
+        <div class="keyLine">
+            <div class="key" onclick="clicou('0')">0</div>
+        </div>
+
+        <div class="keyLine">
+            <div class="key white" onclick="branco()">BRANCO</div>
+            <div class="key edit" onclick="corrige()">CORRIGE</div>
+            <div class="key confirm" onclick="confirma()">CONFIRMA</div>
+        </div>
+
+
+        
+    </div>
+    <audio src="confirma.MP3"></audio>
+  </body>
+</html>
